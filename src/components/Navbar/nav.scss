@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >div:nth-child(1){
+            margin-left: 5%;
+            color: #2398ff;
+            font-family: 'Caveat', cursive;
+            font-size: 25px;
+        }
+        >div:nth-child(2){
+            margin-right: 5%;
+            color: #2398ff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
