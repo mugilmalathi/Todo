@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./index.scss"
-import { BsFillBrushFill } from "react-icons/bs";
+import { BsPlusCircleDotted } from "react-icons/bs";
 import { BsTrashFill } from "react-icons/bs";
 import { BsCheckCircle } from "react-icons/bs";
 
@@ -10,7 +10,6 @@ const AddTodo = () => {
     const[todo, setTodo]=useState([])
 
     const arr = JSON.parse(localStorage.getItem('todo'))
-    console.log(arr);
   
     const handleTodo=()=>{
       if(search != ""){
@@ -33,7 +32,7 @@ const AddTodo = () => {
             placeholder="Enter"
             onChange={(e)=>setSearch(e.target.value)}
             />
-            <div onClick={()=>handleTodo()} className="submit"><BsFillBrushFill /></div>
+            <div onClick={()=>handleTodo()} className="submit"><BsPlusCircleDotted /></div>
         </div>
 
         <div className='table'>

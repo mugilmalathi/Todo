@@ -3,6 +3,7 @@ import "./nav.scss"
 import { FaGuilded } from "react-icons/fa";
 import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Input, useDisclosure } from '@chakra-ui/react';
 import { useNavigate } from 'react-router';
+import nodata from "../../assets/Images/no.gif"
 
 const Navbar = () => {
 
@@ -31,6 +32,8 @@ const Navbar = () => {
           <DrawerBody>
             Coming Soon..!
           </DrawerBody>
+
+          <img src={nodata} alt="" />
 
         </DrawerContent>
       </Drawer>
